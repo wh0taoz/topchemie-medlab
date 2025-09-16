@@ -1,35 +1,80 @@
 import React from 'react';
 import { TestTube, FlaskConical, Microscope, Award, Users, Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { ProductCard } from '@/components/ui/product-card';
+import { StatsCard } from '@/components/ui/stats-card';
+import { FeatureBadge } from '@/components/ui/feature-badge';
+import { ValuesCard } from '@/components/ui/values-card';
 
 const ONama: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-[#2F4550] to-[#586F7C] text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent backdrop-blur-[2px]"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="backdrop-blur-md bg-white/10 rounded-3xl p-8 border border-white/20 shadow-2xl">
-              <h1 className="text-6xl font-light mb-6 tracking-tight">Topchemie Medlab</h1>
-              <p className="text-xl mb-8 text-white/90 font-light">
+      <section
+        className="relative min-h-screen text-white overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/background.jpg')"
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
+        <div className="container mx-auto px-4 relative z-10 flex items-center min-h-screen">
+          <div className="grid lg:grid-cols-2 gap-8 xl:gap-16 items-center w-full max-w-7xl mx-auto">
+            <div className="order-2 lg:order-1 max-w-2xl">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 tracking-tight leading-tight">
+                Topchemie Medlab
+              </h1>
+              <p className="text-lg sm:text-xl mb-8 text-white/90 font-light leading-relaxed">
                 Vaš pouzdani partner u oblasti medicinske opreme, farmaceutskih proizvoda
                 i ekološki sertifikovanih deterdženata
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="/proizvodi/medicina"
-                  className="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-md text-white font-medium rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300 shadow-lg"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-all duration-300 shadow-lg"
                 >
                   Pogledajte Proizvode
                 </a>
                 <a
                   href="/kontakt"
-                  className="inline-flex items-center px-8 py-4 bg-[#2F4550] text-white font-medium rounded-2xl hover:bg-[#586F7C] transition-all duration-300 shadow-lg border border-white/20"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-medium rounded-full border border-white/30 hover:bg-white/10 transition-all duration-300"
                 >
                   Kontaktirajte Nas
                 </a>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-md lg:max-w-2xl xl:max-w-3xl">
+                <img
+                  src="/ikonica-hero-section.png"
+                  alt="Medical Vials"
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                />
+                {/* Blood Status - Left */}
+                <div className="absolute top-4 lg:top-8 left-4 lg:left-8 bg-white/10 backdrop-blur-md rounded-2xl p-3 lg:p-4 border border-white/20 min-w-[140px] lg:min-w-[160px]">
+                  <div className="flex items-center gap-2 lg:gap-3">
+                    <div className="w-2 h-2 lg:w-3 lg:h-3 bg-blue-400 rounded-full animate-pulse"></div>
+                    <span className="text-xs lg:text-sm font-medium">Blood Status</span>
+                  </div>
+                  <div className="mt-2">
+                    <div className="flex items-center gap-1 lg:gap-2">
+                      <div className="w-6 lg:w-8 h-2 lg:h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded"></div>
+                      <div className="w-4 lg:w-6 h-2 lg:h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded"></div>
+                      <div className="w-8 lg:w-10 h-2 lg:h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded"></div>
+                      <div className="w-3 lg:w-4 h-2 lg:h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+                {/* Blood Count - Right */}
+                <div className="absolute bottom-4 lg:bottom-8 right-4 lg:right-8 bg-white/10 backdrop-blur-md rounded-2xl p-3 lg:p-4 border border-white/20 min-w-[120px] lg:min-w-[140px]">
+                  <div className="flex items-center gap-2 lg:gap-3">
+                    <div className="w-2 h-2 lg:w-3 lg:h-3 bg-red-400 rounded-full"></div>
+                    <span className="text-xs lg:text-sm font-medium">Blood Count</span>
+                  </div>
+                  <div className="mt-2">
+                    <span className="text-xl lg:text-2xl font-bold">80</span>
+                    <span className="text-xs lg:text-sm text-white/70 ml-1">bpm</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -47,62 +92,36 @@ const ONama: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="group bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 rounded-3xl overflow-hidden">
-              <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#2F4550] to-[#586F7C] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <TestTube className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="text-2xl font-light mb-4 text-gray-900">Medicina</h3>
-                <p className="text-gray-600 mb-6 font-light leading-relaxed">
-                  Medicinski proizvodi i oprema za zdravstvene ustanove
-                </p>
-                <a
-                  href="/proizvodi/medicina"
-                  className="inline-flex items-center text-[#2F4550] hover:text-[#586F7C] font-medium transition-colors duration-300"
-                >
-                  Saznajte više →
-                </a>
-              </CardContent>
-            </Card>
+            <ProductCard
+              title="Medicina"
+              subtitle="Topchemie Medlab"
+              description="Medicinski proizvodi i oprema za zdravstvene ustanove"
+              icon={<TestTube className="h-6 w-6 text-white" />}
+              gradient="blue"
+              href="/proizvodi/medicina"
+            />
 
-            <Card className="group bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 rounded-3xl overflow-hidden">
-              <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#586F7C] to-gray-700 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <FlaskConical className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="text-2xl font-light mb-4 text-gray-900">Farmako Industrija</h3>
-                <p className="text-gray-600 mb-6 font-light leading-relaxed">
-                  Proizvodi za farmaceutsku industriju
-                </p>
-                <a
-                  href="/proizvodi/farmako-industrija"
-                  className="inline-flex items-center text-[#2F4550] hover:text-[#586F7C] font-medium transition-colors duration-300"
-                >
-                  Saznajte više →
-                </a>
-              </CardContent>
-            </Card>
+            <ProductCard
+              title="Farmako Industrija"
+              subtitle="Professional Solutions"
+              description="Proizvodi za farmaceutsku industriju"
+              icon={<FlaskConical className="h-6 w-6 text-white" />}
+              gradient="gray"
+              href="/proizvodi/farmako-industrija"
+            />
 
-            <Card className="group bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 rounded-3xl overflow-hidden">
-              <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <Microscope className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="text-2xl font-light mb-4 text-gray-900">Ekocert Deterdženti</h3>
-                <p className="text-gray-600 mb-6 font-light leading-relaxed">
-                  Ekološki sertifikovani deterdženti i sredstva za čišćenje
-                </p>
-                <a
-                  href="/proizvodi/ekocert-deterdzenti"
-                  className="inline-flex items-center text-[#2F4550] hover:text-[#586F7C] font-medium transition-colors duration-300"
-                >
-                  Saznajte više →
-                </a>
-              </CardContent>
-            </Card>
+            <ProductCard
+              title="Ekocert Deterdženti"
+              subtitle="Eco-Friendly Solutions"
+              description="Ekološki sertifikovani deterdženti i sredstva za čišćenje"
+              icon={<Microscope className="h-6 w-6 text-white" />}
+              gradient="dark"
+              href="/proizvodi/ekocert-deterdzenti"
+            />
           </div>
         </div>
       </section>
+
 
       {/* About Section */}
       <section className="py-20 bg-white">
@@ -123,58 +142,50 @@ const ONama: React.FC = () => {
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-2xl">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#2F4550] to-[#586F7C] rounded-xl flex items-center justify-center">
-                      <Award className="h-6 w-6 text-white" />
-                    </div>
-                    <span className="text-gray-800 font-medium">Sertifikovani proizvodi</span>
-                  </div>
-                  <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-2xl">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#586F7C] to-gray-700 rounded-xl flex items-center justify-center">
-                      <Users className="h-6 w-6 text-white" />
-                    </div>
-                    <span className="text-gray-800 font-medium">Stručan tim</span>
-                  </div>
-                  <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-2xl">
-                    <div className="w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center">
-                      <Shield className="h-6 w-6 text-white" />
-                    </div>
-                    <span className="text-gray-800 font-medium">Garancija kvaliteta</span>
-                  </div>
-                  <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-2xl">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#2F4550] to-[#586F7C] rounded-xl flex items-center justify-center">
-                      <TestTube className="h-6 w-6 text-white" />
-                    </div>
-                    <span className="text-gray-800 font-medium">Najnovije tehnologije</span>
-                  </div>
+                  <FeatureBadge
+                    icon={<Award className="h-6 w-6" />}
+                    text="Sertifikovani proizvodi"
+                    gradient="blue"
+                  />
+                  <FeatureBadge
+                    icon={<Users className="h-6 w-6" />}
+                    text="Stručan tim"
+                    gradient="gray"
+                  />
+                  <FeatureBadge
+                    icon={<Shield className="h-6 w-6" />}
+                    text="Garancija kvaliteta"
+                    gradient="light"
+                  />
+                  <FeatureBadge
+                    icon={<TestTube className="h-6 w-6" />}
+                    text="Najnovije tehnologije"
+                    gradient="dark"
+                  />
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-6">
-                <Card className="bg-gradient-to-br from-[#2F4550] to-[#586F7C] text-white border-0 rounded-3xl overflow-hidden">
-                  <CardContent className="p-8 text-center">
-                    <div className="text-4xl font-light mb-2">15+</div>
-                    <p className="text-white/80 font-light">Godina iskustva</p>
-                  </CardContent>
-                </Card>
-                <Card className="bg-gradient-to-br from-[#586F7C] to-gray-700 text-white border-0 rounded-3xl overflow-hidden">
-                  <CardContent className="p-8 text-center">
-                    <div className="text-4xl font-light mb-2">500+</div>
-                    <p className="text-white/80 font-light">Zadovoljnih klijenata</p>
-                  </CardContent>
-                </Card>
-                <Card className="bg-gradient-to-br from-gray-700 to-gray-900 text-white border-0 rounded-3xl overflow-hidden">
-                  <CardContent className="p-8 text-center">
-                    <div className="text-4xl font-light mb-2">1000+</div>
-                    <p className="text-white/80 font-light">Proizvoda u ponudi</p>
-                  </CardContent>
-                </Card>
-                <Card className="bg-gradient-to-br from-gray-800 to-black text-white border-0 rounded-3xl overflow-hidden">
-                  <CardContent className="p-8 text-center">
-                    <div className="text-4xl font-light mb-2">24/7</div>
-                    <p className="text-white/80 font-light">Podrška</p>
-                  </CardContent>
-                </Card>
+                <StatsCard
+                  value="15+"
+                  label="Godina iskustva"
+                  gradient="blue"
+                />
+                <StatsCard
+                  value="500+"
+                  label="Zadovoljnih klijenata"
+                  gradient="gray"
+                />
+                <StatsCard
+                  value="1000+"
+                  label="Proizvoda u ponudi"
+                  gradient="light"
+                />
+                <StatsCard
+                  value="24/7"
+                  label="Podrška"
+                  gradient="dark"
+                />
               </div>
             </div>
           </div>
@@ -187,41 +198,26 @@ const ONama: React.FC = () => {
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl font-light mb-16 text-gray-900 tracking-tight">Naše Vrednosti</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
-                <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#2F4550] to-[#586F7C] rounded-2xl flex items-center justify-center">
-                    <Shield className="h-10 w-10 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-light mb-4 text-gray-900">Kvalitet</h3>
-                  <p className="text-gray-600 font-light leading-relaxed">
-                    Najviši standardi kvaliteta u svim našim proizvodima i uslugama
-                  </p>
-                </CardContent>
-              </Card>
+              <ValuesCard
+                title="Kvalitet"
+                description="Najviši standardi kvaliteta u svim našim proizvodima i uslugama"
+                icon={<Shield className="h-10 w-10" />}
+                gradient="blue"
+              />
 
-              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
-                <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#586F7C] to-gray-700 rounded-2xl flex items-center justify-center">
-                    <Users className="h-10 w-10 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-light mb-4 text-gray-900">Pouzdanost</h3>
-                  <p className="text-gray-600 font-light leading-relaxed">
-                    Dugogodišnje partnerstvo zasnovano na poverenju i profesionalnosti
-                  </p>
-                </CardContent>
-              </Card>
+              <ValuesCard
+                title="Pouzdanost"
+                description="Dugogodišnje partnerstvo zasnovano na poverenju i profesionalnosti"
+                icon={<Users className="h-10 w-10" />}
+                gradient="gray"
+              />
 
-              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
-                <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center">
-                    <Award className="h-10 w-10 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-light mb-4 text-gray-900">Inovacije</h3>
-                  <p className="text-gray-600 font-light leading-relaxed">
-                    Kontinuirani razvoj i unapređenje kroz najnovije tehnologije
-                  </p>
-                </CardContent>
-              </Card>
+              <ValuesCard
+                title="Inovacije"
+                description="Kontinuirani razvoj i unapređenje kroz najnovije tehnologije"
+                icon={<Award className="h-10 w-10" />}
+                gradient="dark"
+              />
             </div>
           </div>
         </div>

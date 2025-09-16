@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FlaskConical, TestTube, Microscope, Calendar, Phone } from "lucide-react";
 
 import {
@@ -87,8 +87,21 @@ const TopchemieNavbar = ({
     { name: "Kontakt", url: "/kontakt" },
   ],
 }: TopchemieNavbarProps) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="py-4 border-b">
+    <section className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ${
+      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+    }`}>
       <div className="container">
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
@@ -98,14 +111,16 @@ const TopchemieNavbar = ({
             <div className="flex items-center">
               <NavigationMenu>
                 <NavigationMenuList>
-                  {menu.map((item) => renderMenuItem(item))}
+                  {menu.map((item) => renderMenuItem(item, isScrolled))}
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
           </div>
           <div className="flex items-center">
             <a
-              className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-900"
+              className={`group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-blue-50 hover:text-blue-900 ${
+                isScrolled ? 'text-gray-700' : 'text-white'
+              }`}
               href="/kontakt"
             >
               Kontakt
@@ -162,11 +177,11 @@ const TopchemieNavbar = ({
   );
 };
 
-const renderMenuItem = (item: MenuItem) => {
+const renderMenuItem = (item: MenuItem, isScrolled: boolean) => {
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title} className="text-muted-foreground">
-        <NavigationMenuTrigger className="text-gray-700 hover:text-blue-900">
+        <NavigationMenuTrigger className={`hover:text-blue-900 bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
           {item.title}
         </NavigationMenuTrigger>
         <NavigationMenuContent>
@@ -204,7 +219,9 @@ const renderMenuItem = (item: MenuItem) => {
   return (
     <a
       key={item.title}
-      className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-900"
+      className={`group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-blue-50 hover:text-blue-900 ${
+        isScrolled ? 'text-gray-700' : 'text-white'
+      }`}
       href={item.url}
     >
       {item.title}

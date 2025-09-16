@@ -79,7 +79,7 @@ export const Footer7 = ({
   legalLinks = defaultLegalLinks,
 }: Footer7Props) => {
   return (
-    <section className="py-32">
+    <section>
       <div className="container mx-auto">
         {/* Logo levo */}
         <div className="flex items-center gap-2 mb-10">
