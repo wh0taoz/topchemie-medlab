@@ -265,19 +265,27 @@ const EkocertDeterdzenti: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-gradient-to-br from-gray-900 via-[#2F4550] to-[#586F7C] text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="backdrop-blur-md bg-white/10 rounded-3xl p-8 border border-white/20 shadow-2xl">
-              <h2 className="text-4xl font-light mb-6 tracking-tight">Potrebni Vam Ekološki Proizvodi?</h2>
-              <p className="text-xl mb-8 text-white/90 font-light">
-                Za detaljne informacije o našim Ecocert sertifikovanim proizvodima,
-                slobodno nas kontaktirajte
+      <section
+        className="relative h-[40vh] sm:h-[50vh] text-white overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/background.jpg')"
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
+        <div className="container mx-auto px-4 relative z-10 flex items-center h-full py-8 sm:py-0">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 xl:gap-16 items-center w-full max-w-7xl mx-auto">
+            <div className="max-w-2xl text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 tracking-tight leading-tight">
+                Potrebni su Vam Ekološki Proizvodi?
+              </h2>
+              <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 text-white/90 font-light leading-relaxed">
+                Kontaktirajte nas danas i saznajte kako možemo da vam pomognemo u oblasti ekoloških deterdženata i sredstava za čišćenje
               </p>
+            </div>
+            <div className="flex justify-center lg:justify-end">
               <a
                 href="/kontakt"
-                className="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-md text-white font-medium rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300 shadow-lg"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-all duration-300 shadow-lg text-sm sm:text-base"
               >
                 Kontaktirajte Nas
               </a>

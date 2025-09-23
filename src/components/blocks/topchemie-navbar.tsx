@@ -50,7 +50,7 @@ interface TopchemieNavbarProps {
 const TopchemieNavbar = ({
   logo = {
     url: "/",
-    src: "/topchemie-logo.jpg",
+    src: "/topchemie-logo-main.png", 
     alt: "Topchemie Medlab Logo",
     title: "Topchemie Medlab",
   },
@@ -98,9 +98,20 @@ const TopchemieNavbar = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Check if current page should always have background
+  const shouldAlwaysShowBackground = () => {
+    const currentPath = window.location.pathname;
+    return currentPath.includes('/sajmovi') ||
+           currentPath.includes('/kongresi') ||
+           currentPath.includes('/kontakt') ||
+           currentPath === '/sajmovi-kongresi';
+  };
+
+  const hasBackground = isScrolled || shouldAlwaysShowBackground();
+
   return (
     <section className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      hasBackground ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container">
         <nav className="hidden justify-between lg:flex">
@@ -111,7 +122,7 @@ const TopchemieNavbar = ({
             <div className="flex items-center">
               <NavigationMenu>
                 <NavigationMenuList>
-                  {menu.map((item) => renderMenuItem(item, isScrolled))}
+                  {menu.map((item) => renderMenuItem(item, hasBackground))}
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
@@ -119,7 +130,7 @@ const TopchemieNavbar = ({
           <div className="flex items-center">
             <a
               className={`group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-blue-50 hover:text-blue-900 ${
-                isScrolled ? 'text-gray-700' : 'text-white'
+                hasBackground ? 'text-gray-700' : 'text-white'
               }`}
               href="/kontakt"
             >
@@ -177,11 +188,11 @@ const TopchemieNavbar = ({
   );
 };
 
-const renderMenuItem = (item: MenuItem, isScrolled: boolean) => {
+const renderMenuItem = (item: MenuItem, hasBackground: boolean) => {
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title} className="text-muted-foreground">
-        <NavigationMenuTrigger className={`hover:text-blue-900 bg-transparent ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
+        <NavigationMenuTrigger className={`hover:text-blue-900 bg-transparent ${hasBackground ? 'text-gray-700' : 'text-white'}`}>
           {item.title}
         </NavigationMenuTrigger>
         <NavigationMenuContent>
@@ -220,7 +231,7 @@ const renderMenuItem = (item: MenuItem, isScrolled: boolean) => {
     <a
       key={item.title}
       className={`group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-blue-50 hover:text-blue-900 ${
-        isScrolled ? 'text-gray-700' : 'text-white'
+        hasBackground ? 'text-gray-700' : 'text-white'
       }`}
       href={item.url}
     >

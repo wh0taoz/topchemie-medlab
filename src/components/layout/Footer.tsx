@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
 
   const logo = {
     url: "/",
-    src: "/topchemie-logo.jpg",
+    src: "/topchemie-logo-main.png",
     alt: "Topchemie Medlab",
     title: "Topchemie Medlab",
   };

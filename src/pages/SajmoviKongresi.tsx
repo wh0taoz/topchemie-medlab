@@ -1,58 +1,85 @@
 import React from 'react';
-import { Calendar, MapPin, Users, Award } from 'lucide-react';
+import { Calendar, MapPin, Users, Award, ArrowUpRight } from 'lucide-react';
 
 const SajmoviKongresi: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-20 pt-24 sm:pt-28 lg:pt-32">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <div className="flex justify-center mb-4">
-            <Calendar className="h-16 w-16 text-orange-600" />
-          </div>
-          <h1 className="text-4xl font-bold mb-4 text-gray-800">Sajmovi i Kongresi</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">Sajmovi i Kongresi</h1>
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base lg:text-lg font-light px-4 sm:px-0">
             Redovno učestvujemo na najvažnijim medicinskim i farmaceutskim sajmovima
             i kongresima u regionu i svetu.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <MapPin className="h-12 w-12 text-blue-500 mb-4" />
-            <h3 className="text-xl font-semibold mb-3 text-gray-800">Regionalni Sajmovi</h3>
-            <p className="text-gray-600">
-              Aktivno učešće na vodećim medicinskim sajmovima u Srbiji, regionu i Evropi.
-            </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
+          <div className="group">
+            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900">Sajmovi</div>
+                <div className="flex items-center gap-2 bg-[#2F4550]/10 text-[#2F4550] px-3 py-1 rounded-full text-sm">
+                  <MapPin className="h-4 w-4" />
+                  <span>Region</span>
+                </div>
+              </div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">
+                Regionalni sajmovi
+              </h3>
+              <div className="text-gray-600 font-light text-sm leading-relaxed">
+                Aktivno učešće na vodećim medicinskim sajmovima u Srbiji, regionu i Evropi.
+              </div>
+            </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <Users className="h-12 w-12 text-green-500 mb-4" />
-            <h3 className="text-xl font-semibold mb-3 text-gray-800">Stručni Kongresi</h3>
-            <p className="text-gray-600">
-              Učešće na međunarodnim kongresima i stručnim skupovima iz oblasti medicine.
-            </p>
+          <div className="group">
+            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900">Kongresi</div>
+                <div className="flex items-center gap-2 bg-[#586F7C]/10 text-[#586F7C] px-3 py-1 rounded-full text-sm">
+                  <Users className="h-4 w-4" />
+                  <span>Stručni</span>
+                </div>
+              </div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">
+                Stručni kongresi
+              </h3>
+              <div className="text-gray-600 font-light text-sm leading-relaxed">
+                Učešće na međunarodnim kongresima i stručnim skupovima iz oblasti medicine.
+              </div>
+            </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <Award className="h-12 w-12 text-purple-500 mb-4" />
-            <h3 className="text-xl font-semibold mb-3 text-gray-800">Prezentacije</h3>
-            <p className="text-gray-600">
-              Predstavljanje naših proizvoda i inovacija kroz prezentacije i demo sesije.
-            </p>
+          <div className="group">
+            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900">Demo</div>
+                <div className="flex items-center gap-2 bg-[#2F4550]/10 text-[#2F4550] px-3 py-1 rounded-full text-sm">
+                  <Award className="h-4 w-4" />
+                  <span>Prezentacije</span>
+                </div>
+              </div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">
+                Demo prezentacije
+              </h3>
+              <div className="text-gray-600 font-light text-sm leading-relaxed">
+                Predstavljanje naših proizvoda i inovacija kroz prezentacije i demo sesije.
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="bg-orange-50 p-8 rounded-lg mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">Nadolazeći Događaji</h2>
+        <div className="bg-gray-50 rounded-3xl p-6 sm:p-8 mb-12">
+          <h2 className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8 text-gray-900 tracking-tight">Nadolazeći Događaji</h2>
           <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">Medicus Congress 2024</h3>
-                  <p className="text-gray-600 mb-2">
+                  <h3 className="text-lg font-medium mb-2 text-gray-900">Medicus Congress 2024</h3>
+                  <p className="text-gray-600 font-light mb-3 text-sm">
                     Međunarodni kongres medicine sa fokusom na najnovije tehnologije
                   </p>
-                  <div className="flex items-center text-sm text-gray-500">
+                  <div className="flex items-center text-sm text-gray-500 font-light">
                     <Calendar className="h-4 w-4 mr-1" />
                     <span className="mr-4">15-17. Oktobar 2024</span>
                     <MapPin className="h-4 w-4 mr-1" />
@@ -60,21 +87,21 @@ const SajmoviKongresi: React.FC = () => {
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#2F4550]/10 text-[#2F4550]">
                     Potvrdili učešće
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">EuroPharm Expo 2024</h3>
-                  <p className="text-gray-600 mb-2">
+                  <h3 className="text-lg font-medium mb-2 text-gray-900">EuroPharm Expo 2024</h3>
+                  <p className="text-gray-600 font-light mb-3 text-sm">
                     Vodeći evropski sajam farmaceutske industrije
                   </p>
-                  <div className="flex items-center text-sm text-gray-500">
+                  <div className="flex items-center text-sm text-gray-500 font-light">
                     <Calendar className="h-4 w-4 mr-1" />
                     <span className="mr-4">5-8. Novembar 2024</span>
                     <MapPin className="h-4 w-4 mr-1" />
@@ -82,21 +109,21 @@ const SajmoviKongresi: React.FC = () => {
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#586F7C]/10 text-[#586F7C]">
                     Planirano učešće
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">Green Tech Summit 2024</h3>
-                  <p className="text-gray-600 mb-2">
+                  <h3 className="text-lg font-medium mb-2 text-gray-900">Green Tech Summit 2024</h3>
+                  <p className="text-gray-600 font-light mb-3 text-sm">
                     Konferencija o ekološkim tehnologijama i održivom razvoju
                   </p>
-                  <div className="flex items-center text-sm text-gray-500">
+                  <div className="flex items-center text-sm text-gray-500 font-light">
                     <Calendar className="h-4 w-4 mr-1" />
                     <span className="mr-4">20-22. Decembar 2024</span>
                     <MapPin className="h-4 w-4 mr-1" />
@@ -104,7 +131,7 @@ const SajmoviKongresi: React.FC = () => {
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#2F4550]/10 text-[#2F4550]">
                     Potvrdili učešće
                   </span>
                 </div>
@@ -113,33 +140,63 @@ const SajmoviKongresi: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">Prethodna Učešća</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>• MedTech Serbia 2023 - Beograd</li>
-              <li>• Pharmacon 2023 - Zagreb</li>
-              <li>• EcoForum 2023 - Ljubljana</li>
-              <li>• Balkan Pharma 2023 - Sofija</li>
-              <li>• Health Innovation Summit 2023 - Budimpešta</li>
-            </ul>
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12">
+          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+            <h3 className="text-lg font-medium mb-4 text-gray-900">Prethodna Učešća</h3>
+            <div className="space-y-2">
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>MedTech Serbia 2023 - Beograd</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>Pharmacon 2023 - Zagreb</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>EcoForum 2023 - Ljubljana</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>Balkan Pharma 2023 - Sofija</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>Health Innovation Summit 2023 - Budimpešta</span>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">Što Možete Očekivati</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>• Predstavljanje najnovijih proizvoda</li>
-              <li>• Demonstracije opreme i tehnologija</li>
-              <li>• Stručne prezentacije</li>
-              <li>• Direktan kontakt sa našim ekspertima</li>
-              <li>• Mogućnost testiranja proizvoda</li>
-            </ul>
+          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+            <h3 className="text-lg font-medium mb-4 text-gray-900">Što Možete Očekivati</h3>
+            <div className="space-y-2">
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>Predstavljanje najnovijih proizvoda</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>Demonstracije opreme i tehnologija</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>Stručne prezentacije</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>Direktan kontakt sa našim ekspertima</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <span>Mogućnost testiranja proizvoda</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-gray-800">Zakazivanje Sastanaka</h2>
-          <p className="text-gray-600 mb-4">
+        <div className="bg-gray-50 rounded-3xl p-6 sm:p-8 mb-12">
+          <h2 className="text-2xl sm:text-3xl font-light mb-6 text-gray-900 tracking-tight">Zakazivanje Sastanaka</h2>
+          <p className="text-gray-600 font-light mb-6 text-sm leading-relaxed">
             Želite da se sastanete sa našim timom na nekom od nadolazećih događaja?
             Kontaktirajte nas unapred da zakazate sastanak i dogovorite demonstraciju
             naših proizvoda.
@@ -147,13 +204,13 @@ const SajmoviKongresi: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="/kontakt"
-              className="inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-orange-700 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-all duration-300 shadow-lg"
             >
               Zakažite Sastanak
             </a>
             <a
               href="mailto:info@topchemie-medlab.com"
-              className="inline-flex items-center justify-center px-6 py-3 border border-orange-600 text-orange-600 font-medium rounded-lg hover:bg-orange-50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-blue-600 font-medium rounded-full border border-blue-600 hover:bg-blue-50 transition-all duration-300"
             >
               Pošaljite Email
             </a>
@@ -161,8 +218,8 @@ const SajmoviKongresi: React.FC = () => {
         </div>
 
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Pratite Naše Aktivnosti</h2>
-          <p className="text-gray-600 mb-6">
+          <h2 className="text-2xl sm:text-3xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">Pratite Naše Aktivnosti</h2>
+          <p className="text-gray-600 font-light mb-6 text-sm sm:text-base max-w-2xl mx-auto">
             Budite u toku sa našim učešćima na sajmovima i kongresima kroz naše
             komunikacione kanale.
           </p>
