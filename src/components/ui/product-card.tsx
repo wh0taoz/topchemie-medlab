@@ -25,7 +25,7 @@ const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
 
     return (
       <div className="group">
-        <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+        <div className="bg-gray-50 rounded-3xl p-8 hover:bg-[#2563eb]/5 transition-colors">
           <div className="flex items-center gap-4 mb-6">
             <div className="text-8xl font-light text-gray-900">{cardNumber || "01"}</div>
             <div className={cn(

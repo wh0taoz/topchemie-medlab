@@ -43,7 +43,7 @@ const Medicina: React.FC = () => {
             <div className="grid lg:grid-cols-3 gap-12">
               {/* 01 - Dijagnostička Oprema */}
               <div className="group">
-                <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+                <div className="bg-gray-50 rounded-3xl p-8 hover:bg-[#2563eb]/5 transition-colors">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="text-8xl font-light text-gray-900">01</div>
                     <div className="flex items-center gap-2 bg-[#2F4550]/10 text-[#2F4550] px-3 py-1 rounded-full text-sm">
@@ -62,7 +62,7 @@ const Medicina: React.FC = () => {
 
               {/* 02 - Zaštitna Oprema */}
               <div className="group">
-                <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+                <div className="bg-gray-50 rounded-3xl p-8 hover:bg-[#2563eb]/5 transition-colors">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="text-8xl font-light text-gray-900">02</div>
                     <div className="flex items-center gap-2 bg-[#586F7C]/10 text-[#586F7C] px-3 py-1 rounded-full text-sm">
@@ -81,7 +81,7 @@ const Medicina: React.FC = () => {
 
               {/* 03 - Sertifikovani Proizvodi */}
               <div className="group">
-                <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+                <div className="bg-gray-50 rounded-3xl p-8 hover:bg-[#2563eb]/5 transition-colors">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="text-8xl font-light text-gray-900">03</div>
                     <div className="flex items-center gap-2 bg-[#2F4550]/10 text-[#2F4550] px-3 py-1 rounded-full text-sm">
@@ -113,6 +113,7 @@ const Medicina: React.FC = () => {
               <h2 className="text-5xl font-light mb-8 text-gray-900 leading-tight">
                 Detaljan pregled<br />
                 <span className="font-normal">naše ponude</span>
+                <div className="w-24 h-0.5 bg-[#2563eb] mx-auto mt-6"></div>
               </h2>
               <p className="text-gray-600 font-light leading-relaxed max-w-2xl mx-auto">
                 Kompletna ponuda medicinske opreme i instrumenata za sve vrste zdravstvenih ustanova.
@@ -138,23 +139,23 @@ const Medicina: React.FC = () => {
 
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors">
-                    <div className="w-2 h-2 bg-[#2F4550] rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#2563eb] rounded-full"></div>
                     <span className="text-gray-700 font-light text-sm">Čišćenje</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors">
-                    <div className="w-2 h-2 bg-[#2F4550] rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#2563eb] rounded-full"></div>
                     <span className="text-gray-700 font-light text-sm">Neutralizacija</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors">
-                    <div className="w-2 h-2 bg-[#2F4550] rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#2563eb] rounded-full"></div>
                     <span className="text-gray-700 font-light text-sm">Sredstva za ispiranje / sušenje</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors">
-                    <div className="w-2 h-2 bg-[#2F4550] rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#2563eb] rounded-full"></div>
                     <span className="text-gray-700 font-light text-sm">Dezinfekcija</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors">
-                    <div className="w-2 h-2 bg-[#2F4550] rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#2563eb] rounded-full"></div>
                     <span className="text-gray-700 font-light text-sm">Specijalni proizvodi / nega instrumenata</span>
                   </div>
                 </div>
@@ -178,15 +179,15 @@ const Medicina: React.FC = () => {
 
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors">
-                    <div className="w-2 h-2 bg-[#586F7C] rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#2563eb] rounded-full"></div>
                     <span className="text-gray-700 font-light text-sm">Predpranje / Predtretman</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors">
-                    <div className="w-2 h-2 bg-[#586F7C] rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#2563eb] rounded-full"></div>
                     <span className="text-gray-700 font-light text-sm">Čišćenje</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-xl transition-colors">
-                    <div className="w-2 h-2 bg-[#586F7C] rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#2563eb] rounded-full"></div>
                     <span className="text-gray-700 font-light text-sm">Dezinfekcija</span>
                   </div>
                 </div>
@@ -204,6 +205,7 @@ const Medicina: React.FC = () => {
               <h2 className="text-5xl font-light mb-8 text-gray-900 leading-tight">
                 Naša misija je da unapredimo<br />
                 <span className="font-normal">standarde higijene i bezbednosti</span>
+                <div className="w-24 h-0.5 bg-[#2563eb] mx-auto mt-6"></div>
               </h2>
               <p className="text-gray-600 font-light leading-relaxed max-w-3xl mx-auto">
                 Naša misija je da unapredimo standarde higijene i bezbednosti kroz uvoz i distribuciju vrhunskih proizvoda namenjenih profesionalnoj upotrebi. Posvećeni smo tome da našim partnerima i korisnicima obezbedimo inovativna, pouzdana i ekološki odgovorna rešenja koja olakšavaju svakodnevni rad i doprinose očuvanju zdravlja. Težimo dugoročnom poverenju, stalnom unapređenju i širenju svesti o značaju visokokvalitetnih proizvoda u oblastima čišćenja, dezinfekcije i nege instrumenata.
@@ -231,7 +233,7 @@ const Medicina: React.FC = () => {
             </div>
 
             <div className="mt-20 grid md:grid-cols-3 gap-8">
-              <div className="bg-gray-50 rounded-3xl p-8 text-center hover:bg-gray-100 transition-colors">
+              <div className="bg-gray-50 rounded-3xl p-8 text-center hover:bg-[#2563eb]/5 transition-colors">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#2F4550] to-[#586F7C] rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Activity className="h-8 w-8 text-white" />
                 </div>
@@ -239,7 +241,7 @@ const Medicina: React.FC = () => {
                 <p className="text-gray-600 font-light">Pouzdanost Opreme</p>
               </div>
 
-              <div className="bg-gray-50 rounded-3xl p-8 text-center hover:bg-gray-100 transition-colors">
+              <div className="bg-gray-50 rounded-3xl p-8 text-center hover:bg-[#2563eb]/5 transition-colors">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#586F7C] to-[#2F4550] rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Shield className="h-8 w-8 text-white" />
                 </div>
@@ -247,7 +249,7 @@ const Medicina: React.FC = () => {
                 <p className="text-gray-600 font-light">Međunarodna Sertifikacija</p>
               </div>
 
-              <div className="bg-gray-50 rounded-3xl p-8 text-center hover:bg-gray-100 transition-colors">
+              <div className="bg-gray-50 rounded-3xl p-8 text-center hover:bg-[#2563eb]/5 transition-colors">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#2F4550] to-[#586F7C] rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Heart className="h-8 w-8 text-white" />
                 </div>

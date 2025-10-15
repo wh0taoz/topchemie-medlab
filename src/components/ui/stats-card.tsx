@@ -11,7 +11,7 @@ const StatsCard = React.forwardRef<HTMLDivElement, StatsCardProps>(
   ({ className, value, label, gradient = 'blue', ...props }, ref) => {
     return (
       <div className="group">
-        <div className="bg-gray-50 rounded-3xl p-4 sm:p-6 lg:p-8 hover:bg-gray-100 transition-colors text-center">
+        <div className="bg-gray-50 rounded-3xl p-4 sm:p-6 lg:p-8 hover:bg-[#2563eb]/5 transition-colors text-center">
           <div className="text-4xl sm:text-6xl lg:text-8xl font-light text-gray-900 mb-2 sm:mb-3 lg:mb-4 break-words">
             {value}
           </div>

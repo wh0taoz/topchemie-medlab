@@ -6,7 +6,10 @@ const SajmoviKongresi: React.FC = () => {
     <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-20 pt-24 sm:pt-28 lg:pt-32">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">Sajmovi i Kongresi</h1>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">
+            Sajmovi i Kongresi
+            <div className="w-24 h-0.5 bg-[#2563eb] mx-auto mt-4"></div>
+          </h1>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base lg:text-lg font-light px-4 sm:px-0">
             Redovno učestvujemo na najvažnijim medicinskim i farmaceutskim sajmovima
             i kongresima u regionu i svetu.
@@ -15,7 +18,7 @@ const SajmoviKongresi: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
           <div className="group">
-            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-[#2563eb]/5 transition-colors">
               <div className="flex items-center gap-4 mb-6">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900">Sajmovi</div>
                 <div className="flex items-center gap-2 bg-[#2F4550]/10 text-[#2F4550] px-3 py-1 rounded-full text-sm">
@@ -33,7 +36,7 @@ const SajmoviKongresi: React.FC = () => {
           </div>
 
           <div className="group">
-            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-[#2563eb]/5 transition-colors">
               <div className="flex items-center gap-4 mb-6">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900">Kongresi</div>
                 <div className="flex items-center gap-2 bg-[#586F7C]/10 text-[#586F7C] px-3 py-1 rounded-full text-sm">
@@ -51,7 +54,7 @@ const SajmoviKongresi: React.FC = () => {
           </div>
 
           <div className="group">
-            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-gray-100 transition-colors">
+            <div className="bg-gray-50 rounded-3xl p-8 hover:bg-[#2563eb]/5 transition-colors">
               <div className="flex items-center gap-4 mb-6">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900">Demo</div>
                 <div className="flex items-center gap-2 bg-[#2F4550]/10 text-[#2F4550] px-3 py-1 rounded-full text-sm">
@@ -70,7 +73,10 @@ const SajmoviKongresi: React.FC = () => {
         </div>
 
         <div className="bg-gray-50 rounded-3xl p-6 sm:p-8 mb-12">
-          <h2 className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8 text-gray-900 tracking-tight">Nadolazeći Događaji</h2>
+          <h2 className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8 text-gray-900 tracking-tight">
+            Nadolazeći Događaji
+            <div className="w-24 h-0.5 bg-[#2563eb] mt-4"></div>
+          </h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -145,23 +151,23 @@ const SajmoviKongresi: React.FC = () => {
             <h3 className="text-lg font-medium mb-4 text-gray-900">Prethodna Učešća</h3>
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>MedTech Serbia 2023 - Beograd</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>Pharmacon 2023 - Zagreb</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>EcoForum 2023 - Ljubljana</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>Balkan Pharma 2023 - Sofija</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>Health Innovation Summit 2023 - Budimpešta</span>
               </div>
             </div>
@@ -171,23 +177,23 @@ const SajmoviKongresi: React.FC = () => {
             <h3 className="text-lg font-medium mb-4 text-gray-900">Što Možete Očekivati</h3>
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>Predstavljanje najnovijih proizvoda</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>Demonstracije opreme i tehnologija</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>Stručne prezentacije</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>Direktan kontakt sa našim ekspertima</span>
               </div>
               <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
                 <span>Mogućnost testiranja proizvoda</span>
               </div>
             </div>
@@ -195,7 +201,10 @@ const SajmoviKongresi: React.FC = () => {
         </div>
 
         <div className="bg-gray-50 rounded-3xl p-6 sm:p-8 mb-12">
-          <h2 className="text-2xl sm:text-3xl font-light mb-6 text-gray-900 tracking-tight">Zakazivanje Sastanaka</h2>
+          <h2 className="text-2xl sm:text-3xl font-light mb-6 text-gray-900 tracking-tight">
+            Zakazivanje Sastanaka
+            <div className="w-24 h-0.5 bg-[#2563eb] mt-4"></div>
+          </h2>
           <p className="text-gray-600 font-light mb-6 text-sm leading-relaxed">
             Želite da se sastanete sa našim timom na nekom od nadolazećih događaja?
             Kontaktirajte nas unapred da zakazate sastanak i dogovorite demonstraciju
@@ -218,7 +227,10 @@ const SajmoviKongresi: React.FC = () => {
         </div>
 
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">Pratite Naše Aktivnosti</h2>
+          <h2 className="text-2xl sm:text-3xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">
+            Pratite Naše Aktivnosti
+            <div className="w-24 h-0.5 bg-[#2563eb] mx-auto mt-4"></div>
+          </h2>
           <p className="text-gray-600 font-light mb-6 text-sm sm:text-base max-w-2xl mx-auto">
             Budite u toku sa našim učešćima na sajmovima i kongresima kroz naše
             komunikacione kanale.

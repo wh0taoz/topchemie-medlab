@@ -9,7 +9,7 @@ interface Footer7Props {
   };
   sections?: Array<{
     title: string;
-    links: Array<{ name: string; href: string }>;
+    links: Array<{ name: string; href: string; target?: string }>;
   }>;
   description?: string;
   socialLinks?: Array<{
@@ -105,7 +105,7 @@ export const Footer7 = ({
                       key={linkIdx}
                       className="font-medium hover:text-primary"
                     >
-                      <a href={link.href}>{link.name}</a>
+                      <a href={link.href} target={link.target}>{link.name}</a>
                     </li>
                   ))}
                 </ul>

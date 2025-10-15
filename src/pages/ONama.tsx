@@ -124,7 +124,10 @@ const ONama: React.FC = () => {
       <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">Naši Proizvodi</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">
+              Naši Proizvodi
+              <div className="w-24 h-0.5 bg-[#2563eb] mx-auto mt-4"></div>
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base lg:text-lg font-light px-4 sm:px-0">
               Nudimo širok spektar visokokvalitetnih proizvoda za medicinu, farmaciju i ekologiju
             </p>
@@ -167,7 +170,10 @@ const ONama: React.FC = () => {
               {/* Main content with text and stats */}
               <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                 <div>
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">O Nama</h2>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-4 sm:mb-6 text-gray-900 tracking-tight">
+                    O Nama
+                    <div className="w-24 h-0.5 bg-[#2563eb] mt-4"></div>
+                  </h2>
                   <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-4 sm:mb-6 font-light leading-relaxed">
                     TOPCHEMIE MEDLAB d.o.o. osnovan je 2005. godine kao specijalizovana kompanija za distribuciju medicinskih sredstava, proizvoda za farmaceutsku industriju i zaštitne opreme.
                   </p>
@@ -206,8 +212,8 @@ const ONama: React.FC = () => {
               {/* Horizontal feature cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
                 <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-xl mb-3 sm:mb-4 mx-auto">
-                    <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#2563eb]/10 rounded-xl mb-3 sm:mb-4 mx-auto">
+                    <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-[#2563eb]" />
                   </div>
                   <h4 className="font-medium text-gray-900 mb-2 sm:mb-3 text-center text-sm sm:text-base">Osnovan 2005. godine</h4>
                   <p className="text-gray-600 font-light text-xs sm:text-sm text-center leading-relaxed">
@@ -216,8 +222,8 @@ const ONama: React.FC = () => {
                 </div>
 
                 <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-xl mb-3 sm:mb-4 mx-auto">
-                    <Globe className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#2563eb]/10 rounded-xl mb-3 sm:mb-4 mx-auto">
+                    <Globe className="h-5 w-5 sm:h-6 sm:w-6 text-[#2563eb]" />
                   </div>
                   <h4 className="font-medium text-gray-900 mb-2 sm:mb-3 text-center text-sm sm:text-base">Autorizovani zastupnik</h4>
                   <p className="text-gray-600 font-light text-xs sm:text-sm text-center leading-relaxed">
@@ -226,8 +232,8 @@ const ONama: React.FC = () => {
                 </div>
 
                 <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-xl mb-3 sm:mb-4 mx-auto">
-                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#2563eb]/10 rounded-xl mb-3 sm:mb-4 mx-auto">
+                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-[#2563eb]" />
                   </div>
                   <h4 className="font-medium text-gray-900 mb-2 sm:mb-3 text-center text-sm sm:text-base">Politika kvaliteta</h4>
                   <p className="text-gray-600 font-light text-xs sm:text-sm text-center leading-relaxed">
@@ -236,8 +242,8 @@ const ONama: React.FC = () => {
                 </div>
 
                 <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-xl mb-3 sm:mb-4 mx-auto">
-                    <Building2 className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#2563eb]/10 rounded-xl mb-3 sm:mb-4 mx-auto">
+                    <Building2 className="h-5 w-5 sm:h-6 sm:w-6 text-[#2563eb]" />
                   </div>
                   <h4 className="font-medium text-gray-900 mb-2 sm:mb-3 text-center text-sm sm:text-base">Klijenti</h4>
                   <p className="text-gray-600 font-light text-xs sm:text-sm text-center leading-relaxed">
