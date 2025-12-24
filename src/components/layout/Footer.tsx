@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       title: "Partneri",
       links: [
         { name: "Borer Chemie", href: "https://www.borer.swiss/en/", target: "_blank" },
-        { name: "Sanolabor", href: "https://www.sanolabor.si/", target: "_blank" },
+        { name: "Sanolabor", href: "https://www.sanolabor.com/", target: "_blank" },
         { name: "Saniswiss", href: "https://www.saniswiss.com/", target: "_blank" },
         { name: "Dastex", href: "https://www.dastex.com/en/", target: "_blank" },
       ],

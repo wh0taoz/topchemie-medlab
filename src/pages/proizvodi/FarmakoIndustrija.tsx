@@ -16,10 +16,10 @@ const FarmakoIndustrija: React.FC = () => {
           <div className="w-full max-w-7xl mx-auto text-center">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 tracking-tight leading-tight">
-                Farmako Industrija
+                Farmaceutska Industrija
               </h1>
               <p className="text-lg sm:text-xl mb-8 text-white/90 font-light leading-relaxed max-w-3xl mx-auto">
-                Specijalizovani smo za snabdevanje farmaceutske industrije sa visokokvalitetnim sirovinama, opremom i tehnologijama
+                Specijalizovani smo za snabdevanje farmaceutske industrije sa visokokvalitetnim deterdžentima, opremom i tehnologijama
               </p>
               <div className="flex justify-center">
                 <a
@@ -74,7 +74,7 @@ const FarmakoIndustrija: React.FC = () => {
                     Proizvoda
                   </h3>
                   <p className="text-gray-600 font-light text-sm leading-relaxed">
-                    GMP sertifikovani proizvodi garantuju maksimalnu sigurnost i pouzdanost u farmaceutskoj proizvodnji.
+                    Proizvodi za GMP sertifikovane proizvodnje
                   </p>
                 </div>
               </div>
@@ -206,7 +206,7 @@ const FarmakoIndustrija: React.FC = () => {
                     posuđa
                   </h3>
                   <p className="text-gray-600 font-light text-xs leading-relaxed mb-6">
-                    deconex proizvodi razvijeni su posebno za laboratorije i obezbeđuju staklo bez ostataka i pouzdane analitičke rezultate.
+                    deconex® proizvodi razvijeni su posebno za laboratorije i obezbeđuju staklo bez ostataka i pouzdane analitičke rezultate.
                   </p>
                 </div>
 
@@ -245,7 +245,7 @@ const FarmakoIndustrija: React.FC = () => {
                 <div className="w-24 h-0.5 bg-[#2563eb] mx-auto mt-6"></div>
               </h2>
               <p className="text-gray-600 font-light leading-relaxed max-w-3xl mx-auto">
-                Naša misija je da obezbedimo proizvode zasnovane na naučno potvrđenim tehnologijama, koji ispunjavaju najviše standarde kvaliteta, bezbednosti i efikasnosti. Fokusirani smo na uvoz i distribuciju inovativnih rešenja koja unapređuju higijenske protokole i podržavaju očuvanje zdravlja u profesionalnim okruženjima. Težimo da budemo pouzdan partner zdravstvenim i industrijskim institucijama, nudeći rešenja koja spajaju vrhunsku tehnologiju, održivost i odgovornost prema korisnicima i društvu.
+                Naša misija je da obezbedimo proizvode zasnovane na naučno potvrđenim tehnologijama, koji ispunjavaju najviše standarde kvaliteta, bezbednosti i efikasnosti. Fokusirani smo na uvoz i distribuciju inovativnih rešenja koja unapređuju protokole i podržavaju očuvanje zdravlja u profesionalnim okruženjima. Težimo da budemo pouzdan partner, nudeći rešenja koja spajaju vrhunsku tehnologiju, održivost i odgovornost prema korisnicima i društvu.
               </p>
             </div>
 
@@ -263,7 +263,7 @@ const FarmakoIndustrija: React.FC = () => {
               </div>
 
               <div className="text-center">
-                <div className="text-8xl font-light text-gray-900 mb-4">50+</div>
+                <div className="text-8xl font-light text-gray-900 mb-4">100+</div>
                 <p className="text-gray-600 font-light text-sm mb-2">Uspešnih Partnerstava</p>
                 <div className="w-16 h-1 bg-[#2F4550] mx-auto rounded-full"></div>
               </div>
@@ -275,7 +275,7 @@ const FarmakoIndustrija: React.FC = () => {
                   <Activity className="h-8 w-8 text-white" />
                 </div>
                 <div className="text-3xl font-light mb-2 text-gray-900">GMP</div>
-                <p className="text-gray-600 font-light">Sertifikovani Standardi</p>
+                <p className="text-gray-600 font-light">Stručna podrška</p>
               </div>
 
               <div className="bg-gray-50 rounded-3xl p-8 text-center hover:bg-[#2563eb]/5 transition-colors">

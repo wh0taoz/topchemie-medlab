@@ -40,8 +40,7 @@ const ONama: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                Vaš pouzdani partner u oblasti medicinske opreme, farmaceutskih proizvoda
-                i ekološki sertifikovanih deterdženata
+                Vaš pouzdani partner za medicinske ustanove, laboratorije, farmaceutsku i kozmetičku proizvodnju
               </motion.p>
               <motion.div
                 className="flex flex-col sm:flex-row gap-3 sm:gap-4"
@@ -129,11 +128,11 @@ const ONama: React.FC = () => {
               <div className="w-24 h-0.5 bg-[#2563eb] mx-auto mt-4"></div>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base lg:text-lg font-light px-4 sm:px-0">
-              Nudimo širok spektar visokokvalitetnih proizvoda za medicinu, farmaciju i ekologiju
+              Nudimo širok spektar visokokvalitetnih proizvoda za medicinu farmaceutsku industriju i laboratorije
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
             <ProductCard
               title="Medicina"
               subtitle="Medlab"
@@ -143,19 +142,11 @@ const ONama: React.FC = () => {
             />
 
             <ProductCard
-              title="Farmako Industrija"
+              title="Farmaceutska Industrija i Laboratorije"
               subtitle="Farmacija"
               description="Proizvodi za farmaceutsku industriju"
               cardNumber="02"
               href="/proizvodi/farmako-industrija"
-            />
-
-            <ProductCard
-              title="Ekocert Deterdženti"
-              subtitle="Ekologija"
-              description="Ekološki sertifikovani deterdženti i sredstva za čišćenje"
-              cardNumber="03"
-              href="/proizvodi/ekocert-deterdzenti"
             />
           </div>
         </div>
@@ -178,7 +169,7 @@ const ONama: React.FC = () => {
                     TOPCHEMIE MEDLAB d.o.o. osnovan je 2005. godine kao specijalizovana kompanija za distribuciju medicinskih sredstava, proizvoda za farmaceutsku industriju i zaštitne opreme.
                   </p>
                   <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 font-light leading-relaxed">
-                    Kao autorizovani zastupnik firme BORER chemie AG za Srbiju, Crnu Goru i BiH, naše poslovanje obuhvata zastupanje i promociju proizvodnog programa međunarodnih partnera, kao i uvoz i distribuciju njihovih visokokvalitetnih proizvoda.
+                    Kao autorizovani zastupnik firme BORER chemie AG za Srbiju i zemlje u regionu, naše poslovanje obuhvata zastupanje i promociju proizvodnog programa međunarodnih partnera, kao i uvoz i distribuciju njihovih visokokvalitetnih proizvoda.
                   </p>
                   <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 font-light leading-relaxed">
                     Naša misija je da postanemo i ostanemo vodeće preduzeće na tržištu u pogledu kvaliteta usluge i proizvoda koji su predmet prodaje medicinskih sredstava.
@@ -192,12 +183,12 @@ const ONama: React.FC = () => {
                     gradient="blue"
                   />
                   <StatsCard
-                    value="3"
-                    label="Zemlje zastupanja"
+                    value="6+"
+                    label="Srbija i zemlje u regionu"
                     gradient="gray"
                   />
                   <StatsCard
-                    value="100+"
+                    value="200+"
                     label="Zadovoljnih klijenata"
                     gradient="light"
                   />
@@ -227,7 +218,7 @@ const ONama: React.FC = () => {
                   </div>
                   <h4 className="font-medium text-gray-900 mb-2 sm:mb-3 text-center text-sm sm:text-base">Autorizovani zastupnik</h4>
                   <p className="text-gray-600 font-light text-xs sm:text-sm text-center leading-relaxed">
-                    BORER chemie AG za Srbiju, Crnu Goru i BiH
+                    BORER chemie AG za Srbiju i zemlje u regionu
                   </p>
                 </div>
 
@@ -272,7 +263,7 @@ const ONama: React.FC = () => {
                 Spremni za Saradnju?
               </h2>
               <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 text-white/90 font-light leading-relaxed">
-                Kontaktirajte nas danas i saznajte kako možemo da vam pomognemo u oblasti medicinske opreme, farmaceutskih proizvoda i ekoloških rešenja
+                Kontaktirajte nas danas i saznajte kako možemo da vam pomognemo da postignete efikasna, bezbedna i ekonomična rešenja
               </p>
             </div>
             <div className="flex justify-center lg:justify-end">

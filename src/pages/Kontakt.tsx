@@ -118,8 +118,7 @@ const Kontakt: React.FC = () => {
                 Pozovite nas direktno
               </h3>
               <div className="text-gray-600 font-light text-sm leading-relaxed space-y-1">
-                <p>+381 11 123 4567</p>
-                <p>+381 11 123 4568</p>
+                <p>+381 63 217 401</p>
                 <p>Pon-Pet: 08:00 - 16:00</p>
               </div>
             </div>
@@ -138,9 +137,7 @@ const Kontakt: React.FC = () => {
                 Pošaljite nam poruku
               </h3>
               <div className="text-gray-600 font-light text-sm leading-relaxed space-y-1">
-                <p>info@topchemie-medlab.com</p>
-                <p>sales@topchemie-medlab.com</p>
-                <p>support@topchemie-medlab.com</p>
+                <p>office@topchemie.com</p>
               </div>
             </div>
           </div>
@@ -158,7 +155,7 @@ const Kontakt: React.FC = () => {
                 Posetite našu kancelariju
               </h3>
               <div className="text-gray-600 font-light text-sm leading-relaxed space-y-1">
-                <p>Bulevar Oslobođenja 123</p>
+                <p>Šolina 4a</p>
                 <p>11000 Beograd</p>
                 <p>Srbija</p>
               </div>
@@ -256,7 +253,7 @@ const Kontakt: React.FC = () => {
                 >
                   <option value="">Izaberite temu</option>
                   <option value="medicina">Medicinski proizvodi</option>
-                  <option value="farmako">Farmako industrija</option>
+                  <option value="farmako">Farmacetuska industrija</option>
                   <option value="ekocert">Ekocert deterdženti</option>
                   <option value="sajmovi">Sajmovi i kongresi</option>
                   <option value="podrska">Tehnička podrška</option>
@@ -352,13 +349,13 @@ const Kontakt: React.FC = () => {
               <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                 <h3 className="text-lg font-medium mb-4 text-gray-900">Kako do Nas</h3>
                 <p className="text-gray-600 font-light mb-4 text-sm leading-relaxed">
-                  Nalazimo se u centru Beograda, blizu glavnog autobuskog stajališta.
+                  Nalazimo se u centru Beograda, blizu većine bolnica.
                   Dostupan je parking za posetioce.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
                     <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    <span>Bus linije: 2, 5, 7, 9</span>
+                    <span>Bus linije: 34, 41A, 42, 49, 78</span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
@@ -366,7 +363,7 @@ const Kontakt: React.FC = () => {
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <div className="w-2 h-2 bg-gray-400 rounded-full mr-3"></div>
-                    <span>Metro: Stanica Vukov spomenik (500m)</span>
+                    <span>Voz: BG:VOZ 1</span>
                   </div>
                 </div>
               </div>

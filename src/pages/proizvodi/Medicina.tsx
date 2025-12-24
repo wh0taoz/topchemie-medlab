@@ -20,7 +20,7 @@ const Medicina: React.FC = () => {
                 Medicina
               </h1>
               <p className="text-lg sm:text-xl mb-8 text-white/90 font-light leading-relaxed max-w-3xl mx-auto">
-                Nudimo širok spektar medicinskih proizvoda i opreme za zdravstvene ustanove,
+                Nudimo širok spektar medicinskih i biocidnih sredstava i proizvoda za zdravstvene ustanove,
                 ordinacije i laboratorije
               </p>
               <div className="flex justify-center">
@@ -276,7 +276,7 @@ const Medicina: React.FC = () => {
                 Potrebna su Vam Medicinska Sredstva?
               </h2>
               <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 text-white/90 font-light leading-relaxed">
-                Kontaktirajte nas danas i saznajte kako možemo da vam pomognemo u oblasti medicinske opreme i proizvoda
+                Kontaktirajte nas danas i saznajte kako možemo da vam pomognemo
               </p>
             </div>
             <div className="flex justify-center lg:justify-end">

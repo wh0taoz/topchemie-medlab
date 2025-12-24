@@ -67,16 +67,10 @@ const TopchemieNavbar = ({
           url: "/proizvodi/medicina",
         },
         {
-          title: "Farmako Industrija",
+          title: "Farmaceutska Industrija",
           description: "Proizvodi za farmaceutsku industriju",
           icon: <FlaskConical className="size-5 shrink-0" />,
           url: "/proizvodi/farmako-industrija",
-        },
-        {
-          title: "Ekocert Deterdženti",
-          description: "Ekološki sertifikovani deterdženti i sredstva za čišćenje",
-          icon: <Microscope className="size-5 shrink-0" />,
-          url: "/proizvodi/ekocert-deterdzenti",
         },
       ],
     },

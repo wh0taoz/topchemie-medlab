@@ -81,20 +81,20 @@ const SajmoviKongresi: React.FC = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-lg font-medium mb-2 text-gray-900">Medicus Congress 2024</h3>
+                  <h3 className="text-lg font-medium mb-2 text-gray-900">BioPharma & Life Sciences - Connected Live</h3>
                   <p className="text-gray-600 font-light mb-3 text-sm">
-                    Međunarodni kongres medicine sa fokusom na najnovije tehnologije
+                    Borer Chemie AG
                   </p>
                   <div className="flex items-center text-sm text-gray-500 font-light">
                     <Calendar className="h-4 w-4 mr-1" />
-                    <span className="mr-4">15-17. Oktobar 2024</span>
+                    <span className="mr-4">22. Januar 2026</span>
                     <MapPin className="h-4 w-4 mr-1" />
-                    <span>Beograd, Srbija</span>
+                    <span>Cork, Irska</span>
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0">
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#2F4550]/10 text-[#2F4550]">
-                    Potvrdili učešće
+                    Save the date
                   </span>
                 </div>
               </div>
@@ -103,20 +103,20 @@ const SajmoviKongresi: React.FC = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-lg font-medium mb-2 text-gray-900">EuroPharm Expo 2024</h3>
+                  <h3 className="text-lg font-medium mb-2 text-gray-900">World Health Expo Dubai</h3>
                   <p className="text-gray-600 font-light mb-3 text-sm">
-                    Vodeći evropski sajam farmaceutske industrije
+                    Dubai Exhibition Centre
                   </p>
                   <div className="flex items-center text-sm text-gray-500 font-light">
                     <Calendar className="h-4 w-4 mr-1" />
-                    <span className="mr-4">5-8. Novembar 2024</span>
+                    <span className="mr-4">9-12. Februar 2026</span>
                     <MapPin className="h-4 w-4 mr-1" />
-                    <span>Frankfurt, Nemačka</span>
+                    <span>Dubai, UAE</span>
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0">
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#586F7C]/10 text-[#586F7C]">
-                    Planirano učešće
+                    Save the date
                   </span>
                 </div>
               </div>
@@ -125,20 +125,20 @@ const SajmoviKongresi: React.FC = () => {
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-lg font-medium mb-2 text-gray-900">Green Tech Summit 2024</h3>
+                  <h3 className="text-lg font-medium mb-2 text-gray-900">A3P Nordics Forum - Annex 1 & Quality Risk Management</h3>
                   <p className="text-gray-600 font-light mb-3 text-sm">
-                    Konferencija o ekološkim tehnologijama i održivom razvoju
+                    Borer Chemie AG
                   </p>
                   <div className="flex items-center text-sm text-gray-500 font-light">
                     <Calendar className="h-4 w-4 mr-1" />
-                    <span className="mr-4">20-22. Decembar 2024</span>
+                    <span className="mr-4">10-11. Mart 2026</span>
                     <MapPin className="h-4 w-4 mr-1" />
-                    <span>Ljubljana, Slovenija</span>
+                    <span>Kopenhagen, Danska</span>
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0">
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#2F4550]/10 text-[#2F4550]">
-                    Potvrdili učešće
+                    Save the date
                   </span>
                 </div>
               </div>
@@ -150,26 +150,7 @@ const SajmoviKongresi: React.FC = () => {
           <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
             <h3 className="text-lg font-medium mb-4 text-gray-900">Prethodna Učešća</h3>
             <div className="space-y-2">
-              <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
-                <span>MedTech Serbia 2023 - Beograd</span>
-              </div>
-              <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
-                <span>Pharmacon 2023 - Zagreb</span>
-              </div>
-              <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
-                <span>EcoForum 2023 - Ljubljana</span>
-              </div>
-              <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
-                <span>Balkan Pharma 2023 - Sofija</span>
-              </div>
-              <div className="flex items-center text-sm text-gray-600">
-                <div className="w-2 h-2 bg-[#2563eb] rounded-full mr-3"></div>
-                <span>Health Innovation Summit 2023 - Budimpešta</span>
-              </div>
+              <p className="text-sm text-gray-500 font-light">Uskoro...</p>
             </div>
           </div>
 
